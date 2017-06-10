@@ -1,0 +1,436 @@
+//resets
+html, body {
+	line-height: 1rem;
+	font-size: 100%;
+}
+
+footer, header, main, html, body, input, textarea, .ct-cont, .container, .content  {
+	width: 100%;
+}
+
+html, body, .ct-cont, .container, .content, main {
+	height: 100%;
+}
+
+html, body, div, span, object, iframe, a, h1, h2, h3, h4, h5, h6, p, img, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, .reset, .container {
+	margin: 0; 
+	padding: 0;
+}
+
+label {
+	font-weight: normal;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, input, textarea, button:hover, button:focus, .nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .pagination {
+  	background-color: transparent;
+	box-shadow: none;
+}
+
+.nav-tabs, button, button:hover, button:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .nav-tabs > li > a:hover {
+	border: none;
+	box-shadow: none;
+}
+
+textarea {
+	outline: none;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { 
+    display: block;
+}
+
+//resets bootstrap
+.nav-tabs > li {
+	float: none;
+}
+
+.list-inline li {
+	float: left;
+}
+
+.nav-tabs > li > a {
+	padding-right: 2px;
+}
+
+.pagination > li > a {
+	padding: 5px 0 0 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	margin-left: 5px;
+}
+//fim resets
+
+//estilos padrões
+.lft {
+	float: left;
+}
+
+.rgt {
+	float: right;
+}
+
+.container, .content, .rlt {
+    position: relative; 
+}
+
+.ctY, .ctX, .ctXY, .obt {
+    position: absolute; 
+}
+
+.ctY {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.ctX {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ctXY {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container, .content, .ct-mg, .button, .slick-list {
+	margin: auto;
+  	display: block;
+}
+
+.ct-cont {
+	display: table;
+}
+
+.ct-obg { 
+	vertical-align: middle;
+    display: table-cell;
+}
+
+.hide, .bx-loading {
+	display: none;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.txt-just {
+	text-align: justify;
+}
+
+.txt-lft {
+	text-align: left;
+}
+
+.txt-rgt {
+	text-align: right;
+}
+
+.txt-ct {
+	text-align: center;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+b, strong, .bld {
+	font-weight: bold;
+}
+
+.ft-12 {
+	font-size: 12px;
+}
+
+.ft-14 {
+	font-size: 14px;
+}
+
+.ft-16 {
+	font-size: 16px;
+}
+
+.ft-20 {
+	font-size: 20px;
+}
+
+.ft-24 {
+	font-size: 24px;
+}
+
+.ft-30 {
+	font-size: 30px;
+}
+
+.mg-20 {
+	margin: 20px;
+}
+
+.mgtb-10 {
+	margin: 10px 0 10px 0;
+}
+
+.mgtb-20 {
+	margin: 20px 0 20px 0;
+}
+
+.mgtb-30 {
+	margin: 30px 0 30px 0;
+}
+
+.mgtb-50 {
+	margin: 50px 0 50px 0;
+}
+
+.mgt-10, input, .row {
+	margin-top: 10px;
+}
+
+.mgt-20 {
+	margin-top: 20px;
+}
+
+.mgt-30 {
+	margin-top: 30px;
+}
+
+.mgt-50 {
+	margin-top: 50px;
+}
+
+.mgr-5 {
+	margin-right: 5px;
+}
+
+.mgr-10 {
+	margin-right: 10px;
+}
+
+.mgr-20 {
+	margin-right: 20px;
+}
+
+.mgr-30 {
+	margin-right: 30px;
+}
+
+.mglr-10 {
+	margin: 0 10px 0 10px;
+}
+
+.mglr-20 {
+	margin: 0 20px 0 20px;
+}
+
+.mgl-10 {
+	margin-left: 10px;
+}
+
+.mgl-20 {
+	margin-left: 20px;
+}
+
+.mgl-30 {
+	margin-left: 30px;
+}
+
+.mgt-0 {
+	margin-top: 0;
+}
+
+.mgb-0 {
+	margin-bottom: 0;
+}
+
+.mgr-0 {
+	margin-right: 0;
+}
+
+.mgl-0 {
+	margin-left: 0;
+}
+
+.pd-5 {
+	padding: 5px;
+}
+
+.pd-10 {
+	padding: 10px;
+}
+
+.pd-20 {
+	padding: 20px;
+}
+
+.pd-30 {
+	padding: 30px;
+}
+
+.pd-40 {
+	padding: 40px;
+}
+
+.pdtb-10 {
+	padding: 10px 0 10px;
+}
+
+.pdtb-20 {
+	padding: 20px 0 20px;
+}
+
+.pdtb-30 {
+	padding: 30px 0 30px;
+}
+
+.pdtb-50 {
+	padding: 50px 0 50px 0;
+}
+
+.pdt-10 {
+	padding-top: 10px;
+}
+
+.pdt-20 {
+	padding-top: 20px;
+}
+
+.pdt-30 {
+	padding-top: 35px;
+}
+
+.pdb-10 {
+	padding-bottom: 10px;
+}
+
+.pdb-20 {
+	padding-bottom: 20px;
+}
+
+.pdb-30 {
+	padding-bottom: 30px;
+}
+
+.pdr-10 {
+	padding-right: 10px;
+}
+
+.pdr-20 {
+	padding-right: 20px;
+}
+
+.pdl-10 {
+	padding-left: 10px;
+}
+
+.pdl-20 {
+	padding-left: 20px;
+}
+
+.pdlr-10, .fa {
+	padding: 0 10px 0 10px;
+}
+
+.pdlr-20 {
+	padding: 0 20px 0 20px;
+}
+
+.pdt-0 {
+	padding-top: 0;
+}
+
+.pdb-0 {
+	padding-bottom: 0;
+}
+
+.pdr-0 {
+	padding-right: 0;
+}
+
+.pdl-0 {
+	padding-left: 0;
+}
+
+.bd-0 {
+	border: none;
+}
+
+.bdt-0 {
+	border-top: none;
+}
+
+.bdb-0 {
+	border-bottom: none;
+}
+
+.opth-8:hover, .button:hover {
+	opacity: 0.8;
+}
+
+.bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-t {
+	background-color: transparent;
+}
+
+.bg-white {
+	background-color: #FFFFFF;
+}
+
+.ft-white, .ft-white:hover, .ft-white:focus {
+	color: #FFFFFF;
+}
+
+.ft-black, .ft-black:hover, .ft-black:focus {
+	color: #000000;
+}
+
+input {
+	height: 40px;
+	outline: none; 
+}
+
+.checkbox {
+	width: 30px;
+	height: 30px;
+}
+
+button {
+	outline: none; 
+}
+
+.button {
+	margin: 20px auto 20px auto;
+	padding: 10px 50px 10px 50px;
+}
+
+
+
+
+
+
+
+
+
