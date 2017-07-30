@@ -7,13 +7,13 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
-	<link rel="stylesheet" href="assets/dist/font-awesome.min.css"/>
-	<link rel="stylesheet" href="assets/dist/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="assets/css/main.css"/>
 	<link rel="stylesheet" href="assets/css/style.css"/>
 	<!--[if lt IE 7]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
-	<![endif]-->
+		<![endif]-->
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -23,53 +23,53 @@
 				 document.createElement(e[i]);
 			}
 		</script>
-	<![endif] -->
-</head>
-<header>
-	<nav class="header-menu">
-		
-	</nav>
-</header>
-<main class="main">
-	<div class="pudim-list container">
-		<section class="pudim-ranking" id="notebooks" ng-app="notebooks" ng-controller="NotebookListCtrl">
-			<div class="form ct-mg ctXY">
-				<div class="form-container pd-30">
-					<input class="input form-input" type="text" ng-model="searchField"/>
-					<button type="submit" class="addBtn btn form-submit-btn hide mgtb-20 rgt" ng-click="addItem()" ng-disabled="form.$invalid">Add</button>
-					<div tag="ol" name="list" class="todo-list">
-						<ul class="pudim-list-ul mgtb-20 pd-20" id="notebook_ul">
-							<li class="pudim-list-item rlt" ng-repeat="notebook in notebooks | filter:searchField | orderBy: sort:reverse">
-								<div class="ranking-data pdtb-10">
-									<p class="pudim-list-item-desc pd-5">Restaurant: {{notebook.restaurant}}</p>
-									<p class="pudim-list-item-desc pd-5">Data: {{notebook.data}}</p>
-									<p class="pudim-list-item-desc pd-5">Vote: {{notebook.vote}}</p>
-								</div>
-								<div class="close">
-							<button class="pudim-list-remove lft"><a ng-click="deleteItem(index)">X</a></button>
-								</div>
-							</li>
-							<li class="total-votes mgtb-20 pd-5" ng-hide="searchField.$dirty">Number of pudim: {{notebooks.length}}</li>
-						</ul>
+		<![endif] -->
+	</head>
+	<header>
+		<nav class="header-menu">
+			
+		</nav>
+	</header>
+	<main class="main">
+		<div class="pudim-list container">
+			<section class="pudim-ranking" id="notebooks" ng-app="notebooks" ng-controller="NotebookListCtrl">
+				<div class="form ct-mg ctXY">
+					<div class="form-container pd-30">
+						<input class="input form-input" type="text" ng-model="searchField"/>
+						<button type="submit" class="addBtn btn form-submit-btn hide mgtb-20 rgt" ng-click="addItem()" ng-disabled="form.$invalid">Add</button>
+						<div tag="ol" name="list" class="todo-list">
+							<ul class="pudim-list-ul mgtb-20 pd-20" id="notebook_ul">
+								<li class="pudim-list-item rlt" ng-repeat="notebook in notebooks | filter:searchField | orderBy: sort:reverse">
+									<div class="ranking-data pdtb-10">
+										<p class="pudim-list-item-desc pd-5">Restaurant: {{notebook.restaurant}}</p>
+										<p class="pudim-list-item-desc pd-5">Data: {{notebook.data}}</p>
+										<p class="pudim-list-item-desc pd-5">Vote: {{notebook.vote}}</p>
+									</div>
+									<div class="close">
+										<button class="pudim-list-remove lft"><a ng-click="deleteItem(index)">X</a></button>
+									</div>
+								</li>
+								<li class="total-votes mgtb-20 pd-5" ng-hide="searchField.$dirty">Number of pudim: {{notebooks.length}}</li>
+							</ul>
+						</div>
+						<div class="filters">
+							<button class="btn filter-btn" ng-click="sortBy('restaurant')"><span class="sortorder" ng-show="propertyName === 'restaurant'" ng-class="{reverse: reverse}"></span>For restaurant</button>
+							<button class="btn filter-btn" ng-click="sortBy('data')"><span class="sortorder" ng-show="propertyName === 'data'" ng-class="{reverse: reverse}"></span>For data</button>
+							<button class="btn filter-btn" ng-click="sortBy('vote')"><span class="sortorder" ng-show="propertyName === 'vote'" ng-class="{reverse: reverse}"></span>For vote</button>
+						</div>
 					</div>
-					<div class="filters">
-						<button class="btn filter-btn" ng-click="sortBy('restaurant')"><span class="sortorder" ng-show="propertyName === 'restaurant'" ng-class="{reverse: reverse}"></span>For restaurant</button>
-						<button class="btn filter-btn" ng-click="sortBy('data')"><span class="sortorder" ng-show="propertyName === 'data'" ng-class="{reverse: reverse}"></span>For data</button>
-						<button class="btn filter-btn" ng-click="sortBy('vote')"><span class="sortorder" ng-show="propertyName === 'vote'" ng-class="{reverse: reverse}"></span>For vote</button>
-					</div>
-				</div>
-			</div>	
-		</section>
-	</div>
-</main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="assets/dist/bootstrap.min.js"></script>
-<script src="assets/dist/angular.min.js"></script>
-<script src="assets/js/main.js"></script>
-<footer>
-	<nav class="menu-footer">
-		
-	</nav>
-</footer>
+				</div>	
+			</section>
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/dist/angular.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<footer>
+		<nav class="menu-footer">
+			
+		</nav>
+	</footer>
 </body>
 </html>
