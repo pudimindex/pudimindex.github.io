@@ -1,0 +1,189 @@
+.message-title {
+  text-align: center;
+  margin-bottom: 1em; }
+
+.message, .pudim-blush, .btn-animated, .pudim.form, .pudim-svg {
+  margin: auto;
+  display: block; }
+
+.pudim-svg, .btn-animated {
+  vertical-align: middle; }
+
+.pudim-svg, .btn-animated, .btn-submit, .pudim-list-item, .pudim-ranking {
+  position: relative; }
+
+.pudim-list-remove {
+  float: left; }
+
+.ranking-data-item, .total-votes {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.ranking-data-list {
+  padding: 10px; }
+
+.form.container {
+  padding: 30px; }
+
+.btn-filter {
+  margin-bottom: 5px; }
+
+.btn-submit, .pudim-list {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.btn-animated, .btn {
+  background: none; }
+
+.search-input, .btn {
+  border-radius: 2em; }
+
+.message, .btn-animated a {
+  color: #f45e61; }
+
+::-webkit-scrollbar-track, scrollbar::hover::-webkit-scrollbar-track {
+  background-color: #F3F3F3; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #F3F3F3; }
+
+scrollbar::hover::-webkit-scrollbar {
+  width: 5px;
+  background: #F3F3F3; }
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px; }
+
+scrollbar::hover::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px; }
+
+.pudim-ranking, .form, .form.container, .form.container input, .ranking-data-item, .total-votes {
+  width: 100%; }
+
+.close {
+  width: 10%;
+  right: 10px; }
+
+.pudim-ranking {
+  background: #E8CBC0;
+  background: -webkit-linear-gradient(to left, #E8CBC0, #636FA4);
+  background: linear-gradient(to left, #E8CBC0, #636FA4);
+  height: 100%; }
+
+.form {
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #FFFFFF; }
+
+.form.container input {
+  padding: 0.75em 1.5em;
+  border: 1px solid #B5B5B5;
+  transition: border 250ms ease-out; }
+
+.form.container input:focus {
+  border: 1px solid #4fc08d; }
+
+.btn {
+  font-size: 14px;
+  padding: 0.75em 1.5em;
+  color: #2d7c58;
+  letter-spacing: 1px;
+  color: #4fc08d;
+  border: 1px solid #4fc08d;
+  transition: 250ms ease-out; }
+
+.btn:hover, .btn:focus {
+  color: #FFFFFF;
+  background: #4fc08d; }
+
+.btn, .btn:hover, .btn:focus {
+  border: 1px solid #4fc08d; }
+
+.btn-submit {
+  width: 25%; }
+
+.pudim-list {
+  max-height: 200px;
+  overflow-y: scroll;
+  padding-left: 10px; }
+
+.message {
+  max-width: 50%; }
+
+.btn-animated {
+  border: 0;
+  box-sizing: border-box;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  font-weight: 700; }
+  .btn-animated::before, .btn-animated::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.btn-cyan {
+  transition: color 0.25s; }
+  .btn-cyan::before, .btn-cyan::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0; }
+  .btn-cyan::before {
+    top: 0;
+    left: 0; }
+  .btn-cyan::after {
+    bottom: 0;
+    right: 0; }
+  .btn-cyan:hover a {
+    color: #60daaa; }
+  .btn-cyan:hover::before, .btn-cyan:hover::after {
+    width: 100%;
+    height: 100%; }
+  .btn-cyan:hover::before {
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    transition: width 0.25s ease-out,  height 0.25s ease-out 0.25s; }
+  .btn-cyan:hover::after {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,  height 0.25s ease-out 0.75s; }
+
+.pudim-svg {
+  max-height: 400px; }
+
+.pudim-body {
+  animation: pushUp 1s ease-in alternate infinite;
+  transform-origin: bottom center; }
+
+@keyframes pushUp {
+  0% {
+    transform: scale(1);
+    transform: rotate(1deg); }
+  100% {
+    transform: scale(2);
+    transform: rotate(-1deg); } }
+
+.pudim-blush {
+  animation: blush 4s ease-out alternate infinite;
+  transform-origin: top center;
+  animation-delay: 2s; }
+
+@-webkit-keyframes blush {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes dash {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@media (max-width: 620px) {
+  .pudim-list {
+    max-height: 160px; } }

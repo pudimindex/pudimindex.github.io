@@ -1,0 +1,109 @@
+//resets
+html, body {
+	line-height: 1rem;
+	font-size: 100%;
+}
+
+footer, header, main, html, body, input, textarea, .ct-cont, .container, .content  {
+	width: 100%;
+}
+
+html, body, main, .ct-cont, .container, .content {
+	height: 100%;
+}
+
+input[type=checkbox], input[type=radio], .logo {
+	width: 15px;
+	height: 15px;
+}
+
+html, body, main, h1, h2, h3, h4, h5, h6, .reset {
+	margin: 0; 
+	padding: 0;
+}
+
+label {
+	font-weight: normal;
+}
+
+b, strong, .bld {
+	font-weight: bold;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+button, input, textarea, .nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.nav-tabs, button, input, textarea, button:hover, button:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .nav-tabs > li > a:hover {
+	border: none;
+}
+
+input, textarea, a:focus, a:hover, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: none;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
+.container, .content, a, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { 
+	display: block;
+}
+
+//style basic
+.container, .content{
+	margin: auto;
+}
+
+main, .container, .content {
+	position: relative; 
+}
+
+.ctY, .ctX, .ctXY, .obt {
+	position: absolute; 
+}
+
+.ctY {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.ctX {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ctXY {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ct-cont {
+	display: table;
+}
+
+.ct-obg { 
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+input {
+	height: 40px;
+}
+
+
+
+
+
+
+
