@@ -8,12 +8,8 @@ footer, header, main, html, body, input, textarea, .ct-cont, .container, .conten
 	width: 100%;
 }
 
-html, body, .ct-cont, .container, .content {
+html, body, main, .ct-cont, .container, .content {
 	height: 100%;
-}
-
-main {
-	min-height: 100%;
 }
 
 input[type=checkbox], input[type=radio], .logo {
@@ -21,7 +17,7 @@ input[type=checkbox], input[type=radio], .logo {
 	height: 15px;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, .reset {
+html, body, main, h1, h2, h3, h4, h5, h6, .reset {
 	margin: 0; 
 	padding: 0;
 }
@@ -38,7 +34,7 @@ ul, ol {
 	list-style: none;
 }
 
-button, input, textarea, button:hover, button:focus, .nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .pagination {
+button, input, textarea, .nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
 	background-color: transparent;
 	box-shadow: none;
 }
@@ -47,7 +43,7 @@ button, input, textarea, button:hover, button:focus, .nav-tabs > li > a:hover, .
 	border: none;
 }
 
-input, textarea, li:focus, :focus {
+input, textarea, a:focus, a:hover, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
 	outline: none;
 }
 
@@ -59,6 +55,7 @@ a, a:link, a:hover, a:active, a:visited {
 	display: block;
 }
 
+//style basic
 .container, .content{
 	margin: auto;
 }
